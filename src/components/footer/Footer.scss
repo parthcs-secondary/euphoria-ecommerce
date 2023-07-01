@@ -1,0 +1,113 @@
+.Footer > li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+  color: white;
+  background-color: #3c4242;
+  min-height: 28rem;
+  height: fit-content;
+
+  @media screen and (max-width: 900px) {
+    padding-top: 1.5rem;    
+  }
+
+  .footer_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 87%;
+    min-height: fit-content;
+    height: 94%;
+    background-color: inherit;
+
+    @media screen and (max-width: 900px) {
+        width: 96%;
+        // align-items: flex-start;
+        
+    }
+
+    .upper_footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 2fr;
+      grid-template-rows: 1fr;
+
+      @media screen and (max-width: 900px) {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+      }
+      @media screen and (max-width: 540px) {
+        grid-template-rows: 1fr 1fr 0.8fr 0.8fr;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .upper_footer_item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0.6rem;
+      }
+
+      .title {
+        font-size: 1.4rem;
+      }
+
+      .item_list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 0.6rem;
+      }
+      .list_item > a {
+        font-size: 0.8rem;
+      }
+    }
+
+    .bottom_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .bottom_footer_links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            .social_media_link{
+                color: black;
+                border-radius: 10.7px;
+                height: 2.3rem;
+                width: 2.3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+            }
+        }
+
+        .bottom_footer_copyright{
+            display: grid;
+            place-items: center;
+            text-align: center;
+            font-size: 0.8rem;
+            padding-bottom: 1rem;
+        }
+    }
+  }
+}
