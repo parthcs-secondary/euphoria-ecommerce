@@ -1,0 +1,74 @@
+.TopBrand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1920px;
+  margin: 50px auto;
+  height: 320px;
+}
+
+.topbrand_wrapper {
+  background-color: #3c4242;
+  width: 80vw;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+}
+
+.topbrand_content {
+  background-color: inherit;
+  border-radius: 11px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+.topbrand_title {
+  color: #fff;
+  text-align: center;
+  font-size: 44.444px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.topbrand_title2 {
+  color: #fff;
+  text-align: center;
+  font-size: 19.556px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.topbrand_logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+.logobrand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 76px;
+  width: auto;
+  background-color: white;
+  aspect-ratio: 16/9;
+  border-radius: 11px;
+}
+
+.logobrand_img {
+  height: 66px;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+}
